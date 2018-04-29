@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Meta tags -->
+	<title>Login | TnTel Broadband</title>
+	<meta name="keywords" content="Apps Login Form Responsive widget, Flat Web Templates, Android Compatible web template, 
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="/static/login/css/font-awesome.css">
+	<link rel="stylesheet" href="/static/login/css/style.css">
+	<!-- google fonts  -->
+	<link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
+</head>
+<body>
+	<div class="agile-login">
+		<div class="wrapper">
+			<h2>Login</h2>
+			{% if error %}
+				<p style="color: red;">{{ error }}
+			{% endif %}
+			<div class="w3ls-form">
+				<form action="http://localhost:5000/validate" method="post">
+					<label>Mobile</label>
+					<input type="text" name="log-mobile" placeholder="Mobile" required/>
+					<label>Password</label>
+					<input type="password" name="log-password" placeholder="Password" required />
+					<a href="#" class="pass">Forgot Password ?</a>
+					<input type="submit" value="LogIn" />
+				</form>
+			</div>
+			
+			<div class="agile-icons">
+				<a href="#"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+				<a href="#"><span class="fa fa-facebook"></span></a>
+				<a href="#"><span class="fa fa-pinterest-p"></span></a>
+			</div>
+		</div>
+		<br>
+		<div class="copyright">
+		<p>© TnTel All rights reserved | Design by CT Web Team</a></p> 
+	</div>
+	</div>
+	
+</body>
+</html>
